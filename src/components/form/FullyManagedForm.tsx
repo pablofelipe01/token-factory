@@ -276,21 +276,21 @@ export const FullyManagedForm: React.FC = () => {
     {
       value: "aggressive",
       heading: "Aggressive",
-      illustration: "/aggressive.svg",
+      illustration: "https://i.imgur.com/VrCqVTP.jpg",
       helpText:
         "A curve with high price sensitivity. The price raises quickly when people buy, and lowers quickly when they sell. This is best suited for speculative use cases.",
     },
     {
       value: "stable",
       heading: "Stable",
-      illustration: "/stable.svg",
+      illustration: "https://i.imgur.com/VrCqVTP.jpg",
       helpText:
         "A curve with medium price sensitivity. This curve changes price at a constant rate, achieving a balance between aggressive and utility curves.",
     },
     {
       value: "utility",
       heading: "Utility",
-      illustration: "/utility.svg",
+      illustration: "https://i.imgur.com/VrCqVTP.jpg",
       helpText:
         "A curve with a price sensitivity that starts high and lowers with purchases. This curve is best suited for utility use cases, as it rewards early adopters and scales the supply so that the token can be exchanged for goods/services.",
     },
@@ -396,14 +396,14 @@ export const FullyManagedForm: React.FC = () => {
               </Stack>
             </FormControlWithError>
 
-            <FormControlWithError
+            {/* <FormControlWithError
               id="isSocial"
               help={`If this is a social token, it will be associated with your wallet. This means applications like Wum.bo will be able to discover this token by looking up your wallet, which may be associated with your twitter handle, .sol domain, or any other web3 applications. A social token can be part of a network of other social tokens: a collective.`}
               label="Social Token?"
               errors={errors}
             >
               <Switch {...register("isSocial")} />
-            </FormControlWithError>
+            </FormControlWithError> */}
             <FormControlWithError
               id="mint"
               help={`The mint that should be used to purchase this token, example ${NATIVE_MINT.toBase58()} for SOL`}
@@ -429,14 +429,14 @@ export const FullyManagedForm: React.FC = () => {
                 {...register("startingPrice")}
               />
             </FormControlWithError>
-            <FormControlWithError
+            {/* <FormControlWithError
               id="isAntiBot"
               help={`Enable anti botting measures. This will keep bots from profiting by frontrunning your token while the price is low. Your tokens true pricing will take 2 hours to come into effect`}
               label="Enable Anti Bot Measures?"
               errors={errors}
             >
               <Switch {...register("isAntiBot")} />
-            </FormControlWithError>
+            </FormControlWithError> */}
 
             <VStack align="left" w="full">
               <Heading fontSize="xl" mb={4}>
@@ -459,8 +459,8 @@ export const FullyManagedForm: React.FC = () => {
                       tokenBondingSettings?.maxBuyTargetRoyaltyPercentage,
                       100
                     )}
-                    placeholder="5"
-                    defaultValue={5}
+                    placeholder=" "
+                    defaultValue={0}
                     step={0.00001}
                     {...register("buyTargetRoyaltyPercentage")}
                   />
@@ -562,7 +562,7 @@ export const FullyManagedForm: React.FC = () => {
               isLoading={isSubmitting || loading}
               loadingText={awaitingApproval ? "Awaiting Approval" : "Loading"}
             >
-              Create Token
+              Create Token Program
             </Button>
           </VStack>
         </form>
