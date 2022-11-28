@@ -276,23 +276,23 @@ export const FullyManagedForm: React.FC = () => {
     {
       value: "aggressive",
       heading: "Aggressive",
-      illustration: "https://i.imgur.com/VrCqVTP.jpg",
+      illustration: "https://i.imgur.com/kKSMt4I.png",
       helpText:
-        "A curve with high price sensitivity. The price raises quickly when people buy, and lowers quickly when they sell. This is best suited for speculative use cases.",
+        "^0,5",
     },
     {
       value: "stable",
       heading: "Stable",
-      illustration: "https://i.imgur.com/VrCqVTP.jpg",
+      illustration: "https://i.imgur.com/kKSMt4I.png",
       helpText:
-        "A curve with medium price sensitivity. This curve changes price at a constant rate, achieving a balance between aggressive and utility curves.",
+        "^0,25",
     },
     {
       value: "utility",
       heading: "Utility",
-      illustration: "https://i.imgur.com/VrCqVTP.jpg",
+      illustration: "https://i.imgur.com/kKSMt4I.png",
       helpText:
-        "A curve with a price sensitivity that starts high and lowers with purchases. This curve is best suited for utility use cases, as it rewards early adopters and scales the supply so that the token can be exchanged for goods/services.",
+        "^0,1",
     },
   ];
 
