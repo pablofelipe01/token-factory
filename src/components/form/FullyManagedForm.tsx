@@ -275,24 +275,24 @@ export const FullyManagedForm: React.FC = () => {
   const curveOptions = [
     {
       value: "aggressive",
-      heading: "Aggressive",
+      heading: "^0,5",
       illustration: "https://i.imgur.com/kKSMt4I.png",
       helpText:
-        "^0,5",
+        " ",
     },
     {
       value: "stable",
-      heading: "Stable",
+      heading: "^0,25",
       illustration: "https://i.imgur.com/kKSMt4I.png",
       helpText:
-        "^0,25",
+        " ",
     },
     {
       value: "utility",
-      heading: "Utility",
+      heading: "^0,1",
       illustration: "https://i.imgur.com/kKSMt4I.png",
       helpText:
-        "^0,1",
+        " ",
     },
   ];
 
