@@ -96,13 +96,13 @@ async function createFullyManaged(
   let k = 0;
   switch (values.curveType) {
     case "utility":
-      k = 0.5;
+      k = 0.1;
       break;
     case "stable":
-      k = 1;
+      k = 0,25;
       break;
     case "aggressive":
-      k = 2;
+      k = 0,5;
       break;
   }
 
